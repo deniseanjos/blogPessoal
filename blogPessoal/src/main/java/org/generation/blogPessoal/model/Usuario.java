@@ -27,7 +27,6 @@ public class Usuario {
 	@NotNull
 	@Size(min = 5)
 	private String senha;
-	
 
 	public long getId() {
 		return id;
@@ -60,5 +59,6 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
 
 }
