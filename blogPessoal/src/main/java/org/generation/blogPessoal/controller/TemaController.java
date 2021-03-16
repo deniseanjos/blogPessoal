@@ -16,13 +16,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import io.swagger.annotations.Api;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/tema")
-@Api(value="API Rest Tema")
+@Api(value="API REST Tema")
 public class TemaController {
 	
 	@Autowired
@@ -39,7 +38,7 @@ public class TemaController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@GetMapping("/nome/{nome^}")
+	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Tema>> getByName (@PathVariable String nome) {
 		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome));
 	}
