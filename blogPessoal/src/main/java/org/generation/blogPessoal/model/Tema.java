@@ -24,7 +24,7 @@ public class Tema {
 	@NotNull
 	private String descricao;
 	
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE) // alterado de ALL para REMOVE no bloco Angular 
 	@JsonIgnoreProperties("tema")
 	private List<Postagem> postagem;
 
