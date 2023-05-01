@@ -1,5 +1,3 @@
 # Blog Pessoal
 
-Bem-vindes ao meu GitHub. 
-
-Neste repositório você encontrará o histórico do desenvolvimento em andamento do Blog Pessoal.
+Camada back-end do projeto de blog pessoal desenvolvido em Java com Spring Boot.
